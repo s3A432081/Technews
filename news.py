@@ -36,6 +36,7 @@ while True:
             del tmp[0]
         # print(tmp)
     except:
+        time.sleep(60)
         url = "https://technews.tw/"
         re = requests.get(url)
         re.encoding = re.apparent_encoding
